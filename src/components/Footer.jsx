@@ -191,9 +191,11 @@ const Footer = () => {
           <div className="bottom-content">
             <center>
               <span className="copyright">
-                © 2020 ACU_JGS. All Rights Reserved. Powered by: OlaTech
+                © {new Date().getFullYear()} ACU_JGS. All Rights Reserved.
+                Powered by: OlaTech
               </span>
             </center>
+
             {/* <div className="powered-by">
               <span>Powered by: OlaTech</span>
             </div> */}
