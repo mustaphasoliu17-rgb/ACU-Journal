@@ -8,7 +8,7 @@ import ReviewerGuide from "./components/ReviewerGuide";
 import CopyWright from "./components/CopyWright";
 import Openaccess from "./components/Openaccess";
 import Editorial from "./components/Editorial";
-import Digitalarchiving from "./components/Digitalarchiving";
+import DigitalArchiving from "./components/DigitalArchiving";
 import Crossmark from "./components/Crossmark";
 import Navbar from "./components/Navbar";
 import SubmitNewManuscript from "./components/SubmitNewManuscript";
@@ -65,7 +65,7 @@ function App() {
             <Route path="/copyright" element={<CopyWright />} />
             <Route path="/open-access" element={<Openaccess />} />
             <Route path="/editorial" element={<Editorial />} />
-            <Route path="/digital-archiving" element={<Digitalarchiving />} />
+            <Route path="/digital-archiving" element={<DigitalArchiving />} />
             <Route path="/crossmark" element={<Crossmark />} />
             <Route path="/puplication-fee" element={<PublicationFee />} />
             <Route path="*" element={<PageNotFound />} />
