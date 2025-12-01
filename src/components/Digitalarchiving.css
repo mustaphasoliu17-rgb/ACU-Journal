@@ -1,0 +1,418 @@
+.digital-archiving-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 40px;
+  /* padding: 80px 1rem 2rem; */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.digital-archiving-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.digital-archiving-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--accent-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Introduction Section */
+.intro-section {
+  margin-bottom: 2rem;
+}
+
+.intro-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.intro-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.intro-content h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.intro-content p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Principles Section */
+.principles-section {
+  margin-bottom: 2rem;
+}
+
+.principles-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.principle-card {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-blue);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.principle-number {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--accent-blue) 100%
+  );
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(13, 27, 42, 0.15);
+}
+
+.principle-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.principle-content p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Practices Section */
+.practices-section {
+  margin-bottom: 2rem;
+}
+
+.practices-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.practices-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.practices-header h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.practices-header p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.practices-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.practice-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--lighter-blue);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+  transition: transform 0.3s ease;
+}
+
+.practice-item:hover {
+  transform: translateX(5px);
+}
+
+.practice-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.practice-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.practice-content p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-bottom: 2rem;
+}
+
+.benefits-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.benefit-content h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.benefit-content p {
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Commitment Section */
+.commitment-section {
+  margin-bottom: 1rem;
+}
+
+.commitment-card {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(13, 27, 42, 0.2);
+  text-align: center;
+}
+
+.commitment-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.commitment-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.commitment-content p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .digital-archiving-page {
+    padding: 70px 1rem 1.5rem;
+  }
+
+  .digital-archiving-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .intro-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .intro-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .principle-card {
+    padding: 1.5rem 1.2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .principle-number {
+    align-self: center;
+  }
+
+  .practices-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .practice-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .benefit-item {
+    padding: 1.2rem;
+  }
+
+  .commitment-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .digital-archiving-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-icon {
+    font-size: 3rem;
+  }
+
+  .principles-section h2,
+  .benefits-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .principle-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .practices-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .practice-icon {
+    font-size: 2rem;
+  }
+
+  .commitment-icon {
+    font-size: 2.5rem;
+  }
+
+  .commitment-content h3 {
+    font-size: 1.3rem;
+  }
+}

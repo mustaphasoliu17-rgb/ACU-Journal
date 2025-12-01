@@ -1,0 +1,393 @@
+.copyright-page {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  /* padding: 80px 1rem 2rem; */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.copyright-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.copyright-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--accent-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Content Section */
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.section-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.content-card h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.content-text {
+  text-align: left;
+}
+
+.content-text p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  font-size: 1.05rem;
+}
+
+.content-text p:last-child {
+  margin-bottom: 0;
+}
+
+.important-notice {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #f39c12;
+  margin: 1.5rem 0;
+}
+
+.important-notice h3 {
+  color: #d35400;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.important-notice p {
+  color: #7d6608;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Procedures Section */
+.procedures-section {
+  margin-bottom: 2rem;
+}
+
+.procedures-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.procedures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.procedure-card {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-blue);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.procedure-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.procedure-number {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--accent-blue) 100%
+  );
+  color: var(--white);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(13, 27, 42, 0.15);
+}
+
+.procedure-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.procedure-content p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-bottom: 2rem;
+}
+
+.benefits-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.benefits-card h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.benefits-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: var(--lighter-blue);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+  transition: transform 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateX(5px);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.benefit-text h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.benefit-text p {
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact-section {
+  margin-bottom: 1rem;
+}
+
+.contact-card {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(13, 27, 42, 0.2);
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.contact-content p {
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-action {
+  margin-top: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  background: var(--white);
+  color: var(--primary-blue);
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.contact-button:hover {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--white);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .copyright-page {
+    padding: 70px 1rem 1.5rem;
+  }
+
+  .copyright-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .content-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .content-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .procedures-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .procedure-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .procedure-number {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+  }
+
+  .benefits-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .benefits-content {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .benefit-item {
+    padding: 1rem;
+  }
+
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .copyright-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .content-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .section-icon {
+    font-size: 2.5rem;
+  }
+
+  .procedures-section h2,
+  .benefits-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .procedure-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .procedure-number {
+    align-self: center;
+  }
+
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+
+  .contact-button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+}

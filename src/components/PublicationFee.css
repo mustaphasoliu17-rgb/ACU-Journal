@@ -1,0 +1,653 @@
+.publication-policy-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 40px;
+}
+
+/* .container {
+  max-width: 1000px;
+  margin: 0 auto;
+} */
+
+/* Header Section */
+.policy-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.policy-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--accent-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Introduction Section */
+.intro-section {
+  margin-bottom: 2rem;
+}
+
+.intro-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.intro-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.intro-content h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.intro-content p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-box {
+  background: var(--lighter-blue);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+  margin-top: 1.5rem;
+}
+
+.highlight-box p {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Fees Section */
+.fees-section {
+  margin-bottom: 2rem;
+}
+
+.fees-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.fees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 1.5rem;
+}
+
+.fee-category {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.fee-category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.fee-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--light-gray);
+}
+
+.fee-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.fee-header h3 {
+  color: var(--primary-blue);
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.fee-content p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.fee-amounts {
+  background: var(--lighter-blue);
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.fee-amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.fee-amount:not(:last-child) {
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.amount-label {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.amount-value {
+  color: var(--primary-blue);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.publication-fees {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.publication-fee {
+  background: var(--lighter-blue);
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--light-blue);
+}
+
+.fee-type {
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.fee-price {
+  color: var(--primary-blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.fee-note {
+  color: var(--text-light);
+  font-size: 0.8rem;
+}
+
+.coverage-info {
+  background: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.coverage-info h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.coverage-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.5rem;
+}
+
+.coverage-item {
+  background: var(--white);
+  color: var(--primary-blue);
+  padding: 0.5rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-align: center;
+  border: 1px solid var(--light-blue);
+}
+
+/* Notice Section */
+.notice-section {
+  margin-bottom: 2rem;
+}
+
+.notice-card {
+  background: #fff8e1;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ffd54f;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.notice-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  margin-top: 0.5rem;
+}
+
+.notice-content h3 {
+  color: #e65100;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.notice-content p {
+  color: #5d4037;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.notice-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.notice-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.notice-dot {
+  width: 6px;
+  height: 6px;
+  background: #e65100;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+  flex-shrink: 0;
+}
+
+.notice-item span {
+  color: #5d4037;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Payment Section */
+.payment-section {
+  margin-bottom: 2rem;
+}
+
+.payment-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.payment-card h2 {
+  color: var(--primary-blue);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.payment-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.bank-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem;
+  background: var(--lighter-blue);
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+}
+
+.detail-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.detail-content h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detail-content p {
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.account-number {
+  font-family: "Courier New", monospace;
+  font-size: 1.1rem !important;
+  letter-spacing: 1px;
+}
+
+.payment-instructions {
+  background: var(--light-gray);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.payment-instructions h4 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.instructions-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.instructions-list li {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.instructions-list li::marker {
+  color: var(--accent-blue);
+  font-weight: bold;
+}
+
+/* Benefits Section */
+.benefits-section {
+  margin-bottom: 2rem;
+}
+
+.benefits-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-blue);
+  transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.benefit-content h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.benefit-content p {
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Support Section */
+.support-section {
+  margin-bottom: 1rem;
+}
+
+.support-card {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(13, 27, 42, 0.2);
+  text-align: center;
+}
+
+.support-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.support-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.support-content p {
+  font-size: 1.05rem;
+  opacity: 0.95;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.support-contacts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.support-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.contact-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.contact-details h5 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.contact-details p {
+  margin: 0;
+  text-align: left;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .publication-policy-page {
+    padding: 70px 1rem 1.5rem;
+  }
+
+  .policy-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .intro-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .intro-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .fees-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fee-category {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .fee-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .publication-fees {
+    grid-template-columns: 1fr;
+  }
+
+  .notice-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .payment-info {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .support-contacts {
+    grid-template-columns: 1fr;
+  }
+
+  .support-contact {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .contact-details h5,
+  .contact-details p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .policy-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .intro-icon {
+    font-size: 3rem;
+  }
+
+  .fees-section h2,
+  .benefits-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .payment-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .support-icon {
+    font-size: 2.5rem;
+  }
+
+  .support-content h3 {
+    font-size: 1.3rem;
+  }
+}

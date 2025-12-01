@@ -1,0 +1,655 @@
+.welcome-message-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 40px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+.welcome-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.welcome-header h1 {
+  font-size: 2.5rem;
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--accent-blue) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Opening Section */
+.opening-section {
+  margin-bottom: 2rem;
+}
+
+.opening-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.opening-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.opening-content h2 {
+  color: var(--primary-blue);
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.greeting-text {
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.opening-content p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+/* Mission Section */
+.mission-section {
+  margin-bottom: 2rem;
+}
+
+.mission-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mission-icon {
+  font-size: 3rem;
+  flex-shrink: 0;
+}
+
+.mission-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.mission-content p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlight-box {
+  background: var(--lighter-blue);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+}
+
+.highlight-box p {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Commitment Section */
+.commitment-section {
+  margin-bottom: 2rem;
+}
+
+.commitment-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.commitment-item {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-blue);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.commitment-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.commitment-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.commitment-text h4 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.commitment-text p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+/* Appreciation Section */
+.appreciation-section {
+  margin-bottom: 2rem;
+}
+
+.appreciation-section h2 {
+  font-size: 2rem;
+  color: var(--primary-blue);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.appreciation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.appreciation-card {
+  background: var(--white);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+  border-top: 4px solid var(--accent-blue);
+  transition: all 0.3s ease;
+}
+
+.appreciation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.appreciation-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.appreciation-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.appreciation-header h3 {
+  color: var(--primary-blue);
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.appreciation-content p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.impact-item {
+  background: var(--lighter-blue);
+  color: var(--primary-blue);
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.reviewer-benefits {
+  background: var(--light-gray);
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.reviewer-benefits h5 {
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.reviewer-benefits ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.reviewer-benefits li {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.access-principle {
+  background: var(--lighter-blue);
+  padding: 1.2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+}
+
+.access-principle p {
+  margin: 0;
+  font-style: italic;
+  color: var(--primary-blue);
+}
+
+/* Future Section */
+.future-section {
+  margin-bottom: 2rem;
+}
+
+.future-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.future-card h2 {
+  color: var(--primary-blue);
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.growth-area {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--lighter-blue);
+  border-radius: 8px;
+}
+
+.growth-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.growth-text h4 {
+  color: var(--primary-blue);
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.growth-text p {
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.research-fields {
+  margin-bottom: 2rem;
+}
+
+.research-fields h4 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.fields-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.8rem;
+}
+
+.field-item {
+  background: var(--lighter-blue);
+  color: var(--primary-blue);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid var(--light-blue);
+}
+
+.improvement-areas h4 {
+  color: var(--primary-blue);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.improvement-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.improvement-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--light-gray);
+  border-radius: 8px;
+}
+
+.improvement-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.improvement-item span {
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+/* Vision Section */
+.vision-section {
+  margin-bottom: 2rem;
+}
+
+.vision-card {
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue) 0%,
+    var(--secondary-blue) 100%
+  );
+  color: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(13, 27, 42, 0.2);
+  text-align: center;
+}
+
+.vision-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.vision-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.vision-statement {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.vision-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.pillar-icon {
+  font-size: 2rem;
+}
+
+.pillar span {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* CTA Section */
+.cta-section {
+  margin-bottom: 2rem;
+}
+
+.cta-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.cta-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.cta-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cta-content p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-highlight {
+  background: var(--lighter-blue);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent-blue);
+}
+
+.cta-highlight p {
+  color: var(--primary-blue);
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Closing Section */
+.closing-section {
+  margin-bottom: 1rem;
+}
+
+.closing-card {
+  background: var(--white);
+  padding: 2.5rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.closing-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.closing-content h3 {
+  color: var(--primary-blue);
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.closing-message {
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .welcome-message-page {
+    padding: 70px 1rem 1.5rem;
+  }
+
+  .welcome-header h1 {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .opening-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .mission-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .commitment-grid,
+  .appreciation-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .growth-area {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .fields-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .improvement-list {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cta-card,
+  .closing-card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .opening-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .opening-icon {
+    font-size: 3rem;
+  }
+
+  .commitment-section h2,
+  .appreciation-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .appreciation-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .future-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .vision-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-icon,
+  .closing-icon {
+    font-size: 2.5rem;
+  }
+
+  .closing-content h3 {
+    font-size: 1.3rem;
+  }
+}
